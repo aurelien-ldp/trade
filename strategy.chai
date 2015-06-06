@@ -1,0 +1,15 @@
+def update()
+{
+    if (sma(12, 0) >= ema(12, 0) && sma(12, 1) < ema(12, 1))
+    {
+        buy(5);
+    }
+    else if (sma(12, 0) <= ema(12, 0) && sma(12, 1) > ema(12, 1))
+    {
+        sell(all);
+    }
+    else
+    {
+        wait();
+    }
+}
