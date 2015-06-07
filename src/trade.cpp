@@ -5,7 +5,7 @@
 // Login   <louisd_a@epitech.eu>
 //
 // Started on  Sat Jun  6 02:11:40 2015 aurelien louisditpicard
-// Last update Sat Jun  6 21:08:20 2015 aurelien louisditpicard
+// Last update Sun Jun  7 01:45:59 2015 aurelien louisditpicard
 //
 
 #include "trade.hpp"
@@ -108,4 +108,9 @@ void    trade::sell(int nb)
 void    trade::wait(void)
 {
     std::cout << "wait" << std::endl;
+}
+
+int     trade::percent_of_money(int percentage)
+{
+    return ((current::money * percentage / 100) / price);
 }

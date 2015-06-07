@@ -5,7 +5,7 @@
 // Login   <louisd_a@epitech.eu>
 //
 // Started on  Sat Jun  6 02:11:55 2015 aurelien louisditpicard
-// Last update Sat Jun  6 17:05:23 2015 aurelien louisditpicard
+// Last update Sun Jun  7 01:46:23 2015 aurelien louisditpicard
 //
 
 #ifndef TRADE_HPP_
@@ -31,6 +31,7 @@ namespace trade
     namespace indicator {
         float   sma(int period, int offset = 0);
         float   ema(int period, int offset = 0);
+        int     rsi(int period, int offset = 0);
     }   /* indicator */
 
     extern float               price;
@@ -44,6 +45,7 @@ namespace trade
     void    buy(int nb);
     void    sell(int nb);
     void    wait(void);
+    int     percent_of_money(int percentage);
 
 }   /* trade */
 

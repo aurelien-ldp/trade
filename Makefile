@@ -5,7 +5,7 @@
 ## Login   <louisd_a@epitech.eu>
 ##
 ## Started on  Sat Jun  6 02:12:07 2015 aurelien louisditpicard
-## Last update Sat Jun  6 18:27:07 2015 aurelien louisditpicard
+## Last update Sun Jun  7 01:17:18 2015 aurelien louisditpicard
 ##
 
 CXX		= 	clang++
@@ -19,7 +19,7 @@ SRC 	= 	src/main.cpp		\
 
 OBJ		=	$(SRC:.cpp=.o)
 
-CXXFLAGS=	-I./include --std=c++11 -W -Wall -Wextra -pedantic
+CXXFLAGS=	-I./include --std=c++11 -W -Wall -Wextra
 
 LDFLAGS	=	-ldl
 

@@ -5,7 +5,7 @@
 // Login   <louisd_a@epitech.eu>
 //
 // Started on  Sat Jun  6 03:02:21 2015 aurelien louisditpicard
-// Last update Sat Jun  6 21:42:32 2015 aurelien louisditpicard
+// Last update Sun Jun  7 02:20:48 2015 aurelien louisditpicard
 //
 
 #include "script.hpp"
@@ -23,8 +23,10 @@ void    script::init()
     chai.add(chaiscript::fun(&trade::buy), "buy");
     chai.add(chaiscript::fun(&trade::sell), "sell");
     chai.add(chaiscript::fun(&trade::wait), "wait");
+    chai.add(chaiscript::fun(&trade::percent_of_money), "percent_of_money");
     chai.add(chaiscript::fun(&trade::indicator::sma), "sma");
     chai.add(chaiscript::fun(&trade::indicator::ema), "ema");
+    chai.add(chaiscript::fun(&trade::indicator::rsi), "rsi");
 
     // Load variables
     chai.add_global(chaiscript::var(0), "all");
