@@ -5,10 +5,10 @@
 ## Login   <louisd_a@epitech.eu>
 ##
 ## Started on  Sat Jun  6 02:12:07 2015 aurelien louisditpicard
-## Last update Sun Jun  7 01:17:18 2015 aurelien louisditpicard
+## Last update Sun Jun  7 23:46:05 2015 aurelien louisditpicard
 ##
 
-CXX		= 	clang++
+CXX		= 	g++
 
 NAME 	= 	trade
 
