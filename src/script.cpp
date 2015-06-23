@@ -5,7 +5,7 @@
 // Login   <louisd_a@epitech.eu>
 //
 // Started on  Sat Jun  6 03:02:21 2015 aurelien louisditpicard
-// Last update Sun Jun  7 02:20:48 2015 aurelien louisditpicard
+// Last update Tue Jun 23 01:45:27 2015 aurelien louisditpicard
 //
 
 #include "script.hpp"
@@ -30,6 +30,7 @@ void    script::init()
 
     // Load variables
     chai.add_global(chaiscript::var(0), "all");
+    chai.add_global(chaiscript::var(0), "price");
 
     // Load script file
     chai.eval_file(script::name);
@@ -40,6 +41,8 @@ void    script::execute(void)
     // Update variables
     std::ostringstream s;
     s << "all = " << trade::nb_share << ";";
+    s << "\n";
+    s << "price = " << trade::price << ";";
     chai(s.str());
 
     // Call the update function

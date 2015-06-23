@@ -10,9 +10,7 @@ script = [
     "titres/titres.txt"
 ]
 
-puts("Investment: #{MONEY}\nEarning per day:")
 script.each do |s|
-    print(s + ": ")
     system("./trade_moulinette.php -p trade -f #{s} -m #{MONEY} -s")
     puts
 end

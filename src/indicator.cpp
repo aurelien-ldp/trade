@@ -5,7 +5,7 @@
 // Login   <louisd_a@epitech.eu>
 //
 // Started on  Sat Jun  6 02:21:11 2015 aurelien louisditpicard
-// Last update Sun Jun  7 01:35:28 2015 aurelien louisditpicard
+// Last update Tue Jun 23 02:07:14 2015 aurelien louisditpicard
 //
 
 #include "trade.hpp"
@@ -23,9 +23,9 @@ float       trade::indicator::sma(int period, int offset)
     it = (prices.size() - 1) - offset;
     while (k++ < period)
     {
-        total += prices[it];
+      total += prices[it--];
     }
-    return (total / (float)--k);
+    return (total / ((float)k - 1));
 }
 
 float       trade::indicator::ema(int period, int offset)
