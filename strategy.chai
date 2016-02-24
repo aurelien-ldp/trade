@@ -1,7 +1,7 @@
 def update()
 {
-    var macd = ema(9, 0) - ema(12, 0);
-    var macd_p = ema(9, 1) - ema(12, 1);
+    var macd = ema(8, 0) - ema(18, 0);
+    var macd_p = ema(8, 1) - ema(18, 1);
 
     if (macd > 0 && macd_p < 0)
     {

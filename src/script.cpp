@@ -12,9 +12,10 @@
 
 #include <string>
 #include <sstream>
+#include <chaiscript/chaiscript.hpp>
 #include <chaiscript/chaiscript_stdlib.hpp>
 
-chaiscript::ChaiScript  script::chai;
+chaiscript::ChaiScript  script::chai(chaiscript::Std_Lib::library());
 std::string             script::name;
 
 void    script::init()

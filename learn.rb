@@ -1,3 +1,8 @@
+#
+# Ruby script to set the most profitable ema and rsi parameters
+# /!\ Very complex
+#
+
 $stdout.reopen("output.txt", "w")
 
 tall = Time.now
